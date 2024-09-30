@@ -1,0 +1,30 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.app-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
+}
+
+main {
+  flex-grow: 1;
+}
+input,
+button,
+textarea {
+  padding: 10px;
+  border-radius: 10px;
+}
+input,
+textarea,
+input:is(:hover, :active, :target, :focus-visible),
+textarea:is(:hover, :active, :target, :focus-visible) {
+  border: 1px solid #af40ff;
+  outline: 0;
+}
